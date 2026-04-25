@@ -223,7 +223,7 @@ main section article {
 }
 
 /* Стрілка-зв'язок між рівнями через псевдоелемент */
-main .index section::after {
+#index section::after {
     content: "▼ SIGNAL FLOW ▼";
     display: block;
     text-align: center;
