@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Освітній ресурс з цифрової схемотехніки">
+    <meta name="author" content="Святний Тимофій">
+    <title>схемотехніка - infoelcyc - входи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>infoelCYC</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="components.html">Компоненти</a></li>
+                <li><a href="adder.html">Суматор</a></li>
+                <li><a href="sr-latch.html">SR-Latch</a></li>
+                <li><a href="d-latch.html">D-Latch</a></li>
+                <li><a href="ff.html">Flip-Flop</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>входи</h1>
+        <div class="card">
+            <div class="card-content">
+                <div>
+                    <h2>перемикач</h2>
+                    <p>може бути високим або низьким. може змінюватися.</p>
+                </div>
+                <div class="card-image">
+                    <img src="switch.png" alt="Перемикач">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div>
+                    <h2>кнопка</h2>
+                    <p>може бути високим або низьким. може змінюватися лише тимчасово.</p>
+                </div>
+                <div class="card-image">
+                    <img src="button.png" alt="Кнопка">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div>
+                    <h2>"годинник"</h2>
+                    <p>може бути високим або низьким. змінюється автоматично з певною періодичністю.</p>
+                </div>
+                <div class="card-image">
+                    <img src="clock.png" alt="Годинник">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div>
+                    <h2>постійний високий сигнал</h2>
+                    <p>лише може бути високим.</p>
+                </div>
+                <div class="card-image">
+                    <img src="highconstant.png" alt="Постійний високий сигнал">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div>
+                    <h2>постійний низький сигнал</h2>
+                    <p>лише може бути низьким.</p>
+                </div>
+                <div class="card-image">
+                    <img src="lowconstant.png" alt="Постійний низький сигнал">
+                </div>
+            </div>
+        </div>
+        <h1>компоненти</h1>
+        <div class="card">
+            <div class="card-content">
+                <div>
+                    <h2>буфер</h2>
+                    <p>має 1 вхід. може зробити затримку.</p>
+                </div>
+                <div class="card-image">
+                    <img src="buffer.png" alt="Буфер">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div>
+                    <h2>інвертор (NOT)</h2>
+                    <p>має 1 вхід. може завести протилежний сигнал.</p>
+                </div>
+                <div class="card-image">
+                    <img src="not.png" alt="Інвертор (NOT)">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div>
+                    <h2>буфер</h2>
+                    <p>має 1 вхід. може зробити затримку.</p>
+                </div>
+                <div class="card-image">
+                    <img src="buffer.png" alt="Буфер">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div>
+                    <h2>AND</h2>
+                    <p>має декілька входів. видає високий сигнал лише якщо усі входи мають сигнал високий.</p>
+                </div>
+                <div class="card-image">
+                    <img src="and.png" alt="AND-елемент">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div>
+                    <h2>OR</h2>
+                    <p>має декілька входів. видає високий сигнал якщо 1 або > сигналів високі.</p>
+                </div>
+                <div class="card-image">
+                    <img src="or.png" alt="OR-елемент">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div>
+                    <h2>XOR</h2>
+                    <p>має декілька входів. видає високий сигнал якщо кількість високих сигналів непарний або лише 1.</p>
+                </div>
+                <div class="card-image">
+                    <img src="xor.png" alt="XOR-елемент">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div>
+                    <h2>триштатний буфер</h2>
+                    <p>має 2 входи. трохи працює як AND але лише якщо вхід на стороні трикутника високий.</p>
+                </div>
+                <div class="card-image">
+                    <img src="ts.png" alt="Триштатний буфер">
+                </div>
+            </div>
+        </div>
+        <h1>виходи</h1>
+        <div class="card">
+            <div class="card-content">
+                <div>
+                    <h2>лампочка</h2>
+                    <p>може бути високим або низьким. відображає сигнал.</p>
+                </div>
+                <div class="card-image">
+                    <img src="lightbulb.png" alt="Лампочка">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div>
+                    <h2>сигнал 4 бітів</h2>
+                    <p>може бути високим або низьким. відображає 4 біти даних від 0 до F (15).</p>
+                </div>
+                <div class="card-image">
+                    <img src="4bitsignal.png" alt="Сигнал 4 бітів">
+                </div>
+            </div>
+        </div>
+        <h1>більше компонентів</h1>
+        <div class ="card">
+            <div class="card-content">
+                <div>
+                    <h2>автобус</h2>
+                    <p>має декілька входів. працює як AND, але не видає сигнал якщо не всі входи високі. видає низький сигнал лише якшо всі входи низькі.</p>
+                </div>
+                <div class="card-image">
+                    <img src="bus.png" alt="Автобус">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>infoelCYC</h3>
+                <p>Освітній ресурс з цифрової схемотехніки</p>
+            </div>
+            <div class="footer-section">
+                <h3>Розділи</h3>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="components.html">Компоненти</a></li>
+                    <li><a href="adder.html">Суматор</a></li>
+                    <li><a href="sr-latch.html">SR-Latch</a></li>
+                    <li><a href="d-latch.html">D-Latch</a></li>
+                    <li><a href="ff.html">Flip-Flop</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <p>© 2026 infoelec.<br>Шкільний проект з електроніки</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Навчальний матеріал. Всі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>

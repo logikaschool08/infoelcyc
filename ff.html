@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Освітній ресурс з цифрової схемотехніки">
+    <meta name="author" content="Святний Тимофій">
+    <title>схемотехніка - infoelcyc - тригер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>infoelCYC</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="components.html">Компоненти</a></li>
+                <li><a href="adder.html">Суматор</a></li>
+                <li><a href="sr-latch.html">SR-Latch</a></li>
+                <li><a href="d-latch.html">D-Latch</a></li>
+                <li><a href="ff.html">Flip-Flop</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Тригери (Flip-Flops)</h1>
+        <div class="card">
+            <div class="card-content">
+                <div>
+                    <h2>SR Тригер</h2>
+                    <p>SR тригер (Set-Reset Flip-Flop) — це базовий тип тригера, який має два входи: S (Set) і R (Reset). Він зберігає стан і може бути встановлений у 1 (S=1, R=0) або скинутий у 0 (S=0, R=1). Якщо обидва входи рівні 1, стан не визначений. Використовується для зберігання біту інформації.</p>
+                    <p><strong>Таблиця істинності:</strong><br>S=0, R=0: Q залишається незмінним<br>S=0, R=1: Q=0<br>S=1, R=0: Q=1<br>S=1, R=1: Не визначено</p>
+                </div>
+                <div class="card-image">
+                    <img src="srff.png" alt="SR Тригер">
+                </div>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div>
+                    <h2>D Тригер</h2>
+                    <p>D тригер (Data Flip-Flop) — це тригер, який зберігає значення на вході D при приході тактового імпульсу (clock). Він має один вхід даних D і тактовий вхід. На кожному такті Q приймає значення D. Використовується для синхронного зберігання даних.</p>
+                    <p><strong>Таблиця істинності:</strong><br>Clock=0: Q залишається незмінним<br>Clock=1: Q=D</p>
+                </div>
+                <div class="card-image">
+                    <img src="dff.png" alt="D Тригер">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div>
+                    <h2>JK Тригер</h2>
+                    <p>JK тригер — це вдосконалена версія SR тригера, де J і K — входи, подібні до S і R, але з додатковою функцією toggle (переключення). Якщо J=1 і K=1, тригер переключається. Використовується в лічильниках і регістрах.</p>
+                    <p><strong>Таблиця істинності:</strong><br>J=0, K=0: Q залишається незмінним<br>J=0, K=1: Q=0<br>J=1, K=0: Q=1<br>J=1, K=1: Q переключається</p>
+                </div>
+                <div class="card-image">
+                    <img src="jkff.png" alt="JK Тригер">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div>
+                    <h2>T Тригер</h2>
+                    <p>T тригер (Toggle Flip-Flop) — це тригер, який переключає свій стан при кожному тактовому імпульсі, якщо вхід T=1. Якщо T=0, стан залишається незмінним. Використовується для поділу частоти або в лічильниках.</p>
+                    <p><strong>Таблиця істинності:</strong><br>T=0: Q залишається незмінним<br>T=1: Q переключається</p>
+                </div>
+                <div class="card-image">
+                    <img src="tff.png" alt="T Тригер">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>infoelCYC</h3>
+                <p>Освітній ресурс з цифрової схемотехніки</p>
+            </div>
+            <div class="footer-section">
+                <h3>Розділи</h3>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="components.html">Компоненти</a></li>
+                    <li><a href="adder.html">Суматор</a></li>
+                    <li><a href="sr-latch.html">SR-Latch</a></li>
+                    <li><a href="d-latch.html">D-Latch</a></li>
+                    <li><a href="ff.html">Flip-Flop</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <p>© 2026 infoelec.<br>Шкільний проект з електроніки</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Навчальний матеріал. Всі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Освітній ресурс з цифрової схемотехніки">
+    <meta name="author" content="Святний Тимофій">
+    <title>схемотехніка - infoelcyc - суматор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>infoelCYC</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="components.html">Компоненти</a></li>
+                <li><a href="adder.html">Суматор</a></li>
+                <li><a href="sr-latch.html">SR-Latch</a></li>
+                <li><a href="d-latch.html">D-Latch</a></li>
+                <li><a href="ff.html">Flip-Flop</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+<main>
+    <h1>Суматор (Adder)</h1>
+    <img src="adder.png">
+    
+    <section class="description">
+        <h3>Що таке суматор?</h3>
+        <p>Суматор — це цифровий пристрій, який виконує додавання двійкових чисел. Він є основним компонентом арифметико-логічних пристроїв (ALU) та процесорів.</p>
+        
+        <h3>Напівсуматор (Half Adder)</h3>
+        <p>Напівсуматор додає два біти (A і B) та має два виходи: SUM і CARRY.</p>
+        <table border="1" cellpadding="8" cellspacing="0" style="margin: 20px 0; border-collapse: collapse;">
+            <tr style="background-color: #f0f0f0;">
+                <th>A</th>
+                <th>B</th>
+                <th>SUM</th>
+                <th>CARRY</th>
+            </tr>
+            <tr><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+            <tr><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+            <tr><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+        </table>
+        
+        <h3>Повний суматор (Full Adder)</h3>
+        <p>Повний суматор додає три біти: A, B та C_in (перенос). Має два виходи: SUM і CARRY.</p>
+        <table border="1" cellpadding="8" cellspacing="0" style="margin: 20px 0; border-collapse: collapse;">
+            <tr style="background-color: #f0f0f0;">
+                <th>A</th>
+                <th>B</th>
+                <th>C_in</th>
+                <th>SUM</th>
+                <th>CARRY</th>
+            </tr>
+            <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+            <tr><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+            <tr><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+            <tr><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+            <tr><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+            <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+        </table>
+        
+        <h3>Ключові характеристики</h3>
+        <ul>
+            <li><strong>Напівсуматор:</strong> додає два біти без переносу</li>
+            <li><strong>Повний суматор:</strong> враховує перенос із попереднього розряду</li>
+            <li><strong>Каскадування:</strong> кілька суматорів утворюють багаторозрядний пристрій</li>
+        </ul>
+        
+        <h3>Застосування</h3>
+        <ul>
+            <li>Арифметико-логічні пристрої (ALU)</li>
+            <li>Процесори</li>
+            <li>Калькулятори та цифрові системи</li>
+        </ul>
+    </section>
+</main>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>infoelCYC</h3>
+                <p>Освітній ресурс з цифрової схемотехніки</p>
+            </div>
+            <div class="footer-section">
+                <h3>Розділи</h3>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="components.html">Компоненти</a></li>
+                    <li><a href="adder.html">Суматор</a></li>
+                    <li><a href="sr-latch.html">SR-Latch</a></li>
+                    <li><a href="d-latch.html">D-Latch</a></li>
+                    <li><a href="ff.html">Flip-Flop</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <p>© 2026 infoelec.<br>Шкільний проект з електроніки</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Навчальний матеріал. Всі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>
